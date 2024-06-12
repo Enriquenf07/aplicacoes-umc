@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Cadastro Usuario</title>
+    <style>
+        tr label {
+            color: blue;
+
+        }
+
+        .fontBlue {
+            color: blue;
+        }
+
+        #email {
+            color: brown;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+    <div>
+        <button><a href="index.html" style="font-style: inherit;
+                color: inherit;
+                background-color: transparent;
+                font-size: inherit;
+                text-decoration: none;
+                font-variant: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                font-family: inherit;">usuario</a></button>
+        <button><a href="pages/produto/index.html" style="font-style: inherit;
+                color: inherit;
+                background-color: transparent;
+                font-size: inherit;
+                text-decoration: none;
+                font-variant: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                font-family: inherit;">produtos</a></button>
+        <button><a href="pages/categoria/index.html" style="font-style: inherit;
+                color: inherit;
+                background-color: transparent;
+                font-size: inherit;
+                text-decoration: none;
+                font-variant: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                font-family: inherit;">categorias</a></button>
+        <button><a href="pages/venda/index.html" style="font-style: inherit;
+                    color: inherit;
+                    background-color: transparent;
+                    font-size: inherit;
+                    text-decoration: none;
+                    font-variant: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    font-family: inherit;">vendas</a></button>
+        <button><a href="pages/cliente/index.html" style="font-style: inherit;
+                        color: inherit;
+                        background-color: transparent;
+                        font-size: inherit;
+                        text-decoration: none;
+                        font-variant: inherit;
+                        font-weight: inherit;
+                        line-height: inherit;
+                        font-family: inherit;">clientes</a></button>
+    </div>
+    <h1>Cadastro Usuarios</h1>
+    <table>
+        <tr>
+            <td><label>id:</label></td>
+            <td><input type="text" id="id" disabled> </td>
+        </tr>
+        <tr>
+            <td><label>Nome:</label></td>
+            <td><input type="text" class="fontBlue" id="name" placeholder="insira o nome"> </td>
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" id="email" placeholder="insira o email"> </td>
+        </tr>
+        <tr>
+            <td><label>Admin:</label></td>
+            <td><input type="checkbox" id="admin"></td>
+        </tr>
+        <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" id="password" placeholder="insira a senha"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="btnSalvar">Salvar</button>
+                <button id="btnLimpar">Limpar</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table ID="table_User">
+
+    </table>
+    <script src="js/usuario.js"></script>
+</body>
+
+</html>

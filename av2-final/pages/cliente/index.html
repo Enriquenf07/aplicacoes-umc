@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Cadastro Cliente</title>
+        <style>
+            tr label {
+                color: blue;
+
+            }
+            .fontBlue {
+                color: blue;
+            }
+            #email {
+                color: brown;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+        <div>
+            <button><a href="../../index.html" style="font-style: inherit;
+                    color: inherit;
+                    background-color: transparent;
+                    font-size: inherit;
+                    text-decoration: none;
+                    font-variant: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    font-family: inherit;">usuario</a></button>
+            <button><a href="../produto/index.html" style="font-style: inherit;
+                    color: inherit;
+                    background-color: transparent;
+                    font-size: inherit;
+                    text-decoration: none;
+                    font-variant: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    font-family: inherit;">produtos</a></button>
+            <button><a href="../categoria/index.html" style="font-style: inherit;
+                    color: inherit;
+                    background-color: transparent;
+                    font-size: inherit;
+                    text-decoration: none;
+                    font-variant: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    font-family: inherit;">categorias</a></button>
+            <button><a href="../venda/index.html" style="font-style: inherit;
+                        color: inherit;
+                        background-color: transparent;
+                        font-size: inherit;
+                        text-decoration: none;
+                        font-variant: inherit;
+                        font-weight: inherit;
+                        line-height: inherit;
+                        font-family: inherit;">vendas</a></button>
+            <button><a href="../cliente/index.html" style="font-style: inherit;
+                            color: inherit;
+                            background-color: transparent;
+                            font-size: inherit;
+                            text-decoration: none;
+                            font-variant: inherit;
+                            font-weight: inherit;
+                            line-height: inherit;
+                            font-family: inherit;">clientes</a></button>
+        </div>
+        <h1>Cadastro Clientes</h1>
+        <table>
+            <tr>
+                <td><label>id:</label></td>
+                <td><input type="text" id="id" disabled > </td>
+            </tr>
+            <tr>
+                <td><label>codigo:</label></td>
+                <td><input type="text" class="fontBlue" id="codigo"  placeholder="insira o codigo" > </td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" id="email" placeholder="insira o email"> </td>
+            </tr>
+            <tr>
+                <td><label>Telefone:</label></td>
+                <td><input type="text" id="telefone" placeholder="insira o telefone"> </td>
+            </tr>
+            <tr>
+                <td><label>CPF:</label></td>
+                <td><input type="text" id="cpf" placeholder="insira o cpf"></td>
+            </tr>
+            <tr>
+                <td><label>Endereço:</label></td>
+                <td><input type="text" id="endereco" placeholder="insira o endereço"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="btnSalvar">Salvar</button>
+                    <button id="btnLimpar">Limpar</button>
+                </td>
+            </tr>
+        </table>
+        <hr>
+         <table ID="table_clients">
+           
+         </table>
+         <script src="service.js"></script>
+    </body>
+</html>
